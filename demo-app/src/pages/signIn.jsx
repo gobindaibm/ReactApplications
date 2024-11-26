@@ -58,7 +58,6 @@ const SignInPage = () => {
       // If the form is valid, proceed
       if (isValid) {
         console.log("Form submitted successfully!");
-        localStorage.setItem("isSignedIn", true);
         // Reset form (optional)
         setFormData({
           email: "",

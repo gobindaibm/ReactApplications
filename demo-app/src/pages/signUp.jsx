@@ -6,7 +6,7 @@ const SignUpPage = () => {
     // State for form inputs
     const [formData, setFormData] = useState({
       name: "",
-      email: "",
+      name: "",
       password: "",
     });
     // State for validation errors
@@ -67,8 +67,6 @@ const SignUpPage = () => {
       // If the form is valid, proceed
       if (isValid) {
         console.log("Form submitted successfully!");
-        localStorage.setItem("isSignedIn", true);
-        console.log(localStorage.getItem("isSignedIn"))
         // Reset form (optional)
         setFormData({
           name: "",
